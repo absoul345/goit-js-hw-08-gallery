@@ -66,7 +66,6 @@ const galleryItems = [
 
 const refs = {
   galleryContainer: document.querySelector(".js-gallery"),
-  imageEl: document.createElement("img"),
   lightbox: document.querySelector(".lightbox"),
   lightbox__image: document.querySelector(".lightbox__image"),
   onBtnClose: document.querySelector('[data-action="close-lightbox"]'),
@@ -95,7 +94,7 @@ const galleryMarkup = galleryItems.reduce(
 );
 
 refs.galleryContainer.insertAdjacentHTML("beforeend", galleryMarkup);
-refs.imageEl.classList.add("gallery__image");
+
 
 refs.galleryContainer.addEventListener("click", onGalleryClick);
 refs.onBtnClose.addEventListener("click", onClickClose);
