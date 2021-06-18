@@ -111,7 +111,7 @@ function onGalleryClick(evt) {
     refs.lightbox__image.src = evt.target.getAttribute("data-source");
     refs.lightbox__image.alt = evt.target.alt;
   }
-  window.addEventListener("keyup", clickKey);
+  window.addEventListener("keyup", clickEsc);
 }
 
 function onClickClose(evt) {
